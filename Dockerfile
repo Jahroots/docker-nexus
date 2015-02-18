@@ -8,8 +8,6 @@ RUN mv /nexus-$VERSION-bundle.tar.gz /opt && \
 	tar -xf nexus-$VERSION-bundle.tar.gz && \
 	rm nexus-$VERSION-bundle.tar.gz && \
 	mv nexus-$VERSION nexus
-#RUN tar xz /nexus-$VERSION-bundle.tar.gz
-#RUN mv nexus-$VERSION-bundle nexus
 
 EXPOSE 8081
 ENTRYPOINT ["/opt/nexus/bin/jsw/linux-x86-64/wrapper",\
